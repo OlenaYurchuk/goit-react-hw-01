@@ -1,3 +1,5 @@
+import css from "./Profile.module.css"
+
 export default function Profile({ name,
   tag,
   location,
@@ -5,25 +7,25 @@ export default function Profile({ name,
   stats
 }) {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={css.container}>
+      <div className={css.info}>
+        <img className={css.image} src={image} alt="User avatar" />
+        <p className={css.name}>{name}</p>
+        <p className={css.text}>@{tag}</p>
+        <p className={css.text}>{location}</p>
       </div>
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+      <ul className={css.list}>
+        <li className={css.listItem}>
+          <span className={css.listItemText}>Followers</span>
+          <span className={css.score}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Followers</span>
-          <span>{stats.views}</span>
+        <li className={css.listItem}>
+          <span className={css.listItemText}>Views</span>
+          <span className={css.score}>{stats.views}</span>
         </li>
-        <li>
-          <span>Followers</span>
-          <span>{stats.likes}</span>
+        <li className={css.listItem}>
+          <span className={css.listItemText}>Likes</span>
+          <span className={css.score}>{stats.likes}</span>
         </li>
       </ul>
     </div>

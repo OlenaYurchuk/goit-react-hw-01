@@ -1,0 +1,10 @@
+.container {
+  margin-bottom: 20px;
+  width: 688px;
+  border: 2px solid black;
+}
+
+.head {
+  background-color: black;
+  color: white;
+}

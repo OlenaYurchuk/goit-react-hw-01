@@ -1,0 +1,30 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+}
+.text {
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: black;
+}
+
+.status {
+  font-size: 18px;
+}
+
+.isOnline {
+  color: green;
+}
+
+.isOffline {
+  color: red;
+}
