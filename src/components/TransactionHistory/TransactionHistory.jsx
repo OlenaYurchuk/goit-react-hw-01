@@ -5,17 +5,17 @@ export default function TransactionHistory({ items }) {
     <table className={css.container}>
       <thead className={css.head}>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.headTh}>Type</th>
+          <th className={css.headTh}>Amount</th>
+          <th className={css.headTh}>Currency</th>
         </tr>
       </thead>
       <tbody>
         {items.map((item) => (
-          <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+          <tr className={css.bodyTr} key={item.id}>
+            <td className={css.bodyTd}>{item.type}</td>
+            <td className={css.bodyTd}>{item.amount}</td>
+            <td className={css.bodyTd}>{item.currency}</td>
           </tr>
         ))}
       </tbody>

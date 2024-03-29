@@ -1,10 +1,26 @@
 .container {
   margin-bottom: 20px;
   width: 688px;
-  border: 2px solid black;
+  border-collapse: collapse;
 }
 
 .head {
-  background-color: black;
+  background-color: rgb(43, 42, 42);
   color: white;
+}
+
+.headTh {
+  width: 228px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.bodyTd {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.bodyTr:nth-child(2n) {
+  background-color: rgb(206, 206, 206);
 }
